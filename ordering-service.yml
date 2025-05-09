@@ -1,11 +1,5 @@
   kafka:
     kafka-server: localhost:9092
     consumer:
-      # 동일한 group-id를 가진 컨슈머는 하나의 파티션을 나눠서 처리한다(컨슈머가 보낸 메시지의 offset을 저장한다)
-      # 여러 다른 group-id를 가진 컨슈머는
-      group-id:
-        ordering-service
-        # 컨슈머가 보낸 메시지의 offset을 저장하지 않는다
-      # 메시지중에 처음 들어와있는 메시지부터 읽기시작
-      #(latest : 현시점이후에 들어오는 메시지부터)
+      group-id: ordering-service
       auto-offset-reset: earliest
