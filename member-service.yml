@@ -1,3 +1,10 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3377/ordermsa?useSSL=false&allowPublicKeyRetrieval=true
+    username: root
+    password: rnrdj123
+
 jwt:
   expiration: 1000
   #  인코딩된 문자 32자 이상 필요.(특수문자안됨)

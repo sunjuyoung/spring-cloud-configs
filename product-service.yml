@@ -4,3 +4,8 @@ spring:
     consumer:
       group-id: product-service
       auto-offset-reset: earliest
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3377/ordermsa?useSSL=false&allowPublicKeyRetrieval=true
+    username: root
+    password: rnrdj123
