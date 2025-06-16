@@ -20,9 +20,8 @@ spring:
     database: mysql
     #    InnoDB??
     database-platform: org.hibernate.dialect.MySQL8Dialect
-    generate-ddl: true
     hibernate:
-      ddl-auto: update
+      ddl-auto: validate
     show_sql: true
   cloud:
     bus:
