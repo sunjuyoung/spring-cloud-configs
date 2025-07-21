@@ -1,7 +1,7 @@
 spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3377/ordermsa?useSSL=false&allowPublicKeyRetrieval=true
+    url: jdbc:mysql://localhost:3377/ordering?useSSL=false&allowPublicKeyRetrieval=true
     username: root
     password: rnrdj123
   kafka:
